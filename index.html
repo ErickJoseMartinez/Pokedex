@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Preload" href="style/pokedex.css" as="style">
+    <link rel="stylesheet" href="style/pokedex.css">
+    <link rel="Preload" href="style/normalize.css" as="style">
+    <link rel="stylesheet" href="style/normalize.css">
+    <title>Pokedex</title>
+</head>
+<body onload="fetchEveryPokemon()">
+    <div class="contenedor">
+        <div class="pokedex-sombra">
+            <div class="pokedex">
+                <div class="pokedex-left">
+                    <div class="pokedex-left-top">
+                        <div class='burbuja azul grande'>
+                            <div class="burbuja azul-mediana">
+                                <div class="burbuja azul-pequeña"></div>
+                            </div>
+                        </div>
+                        <div class="burbuja rojo mediana">
+                            <div class="burbuja roja-mediana">
+                                <div class="burbuja roja-pequeña"></div>
+                            </div>
+                        </div>
+                        <div class="burbuja amarillo mediana">
+                            <div class="burbuja amarillo-mediana">
+                                <div class="burbuja amarillo-pequeña"></div>
+                            </div>
+                        </div>
+                        <div class="burbuja amarillo mediana">
+                            <div class="burbuja amarillo-mediana">
+                                <div class="burbuja amarillo-pequeña"></div>
+                            </div>
+                        </div>
+                        <img src="./assets/img/pokemon.png" alt="Pokemon" width="150px">
+                    </div>
+                    <div class="pokedex-contenedor">
+                        <div class="pokedex-pantalla">
+                            <div>
+                                <div id="pokepokeType">
+                                    <p>Nombre: </p>
+                                    <p id="namePokemon">Pokemon</p>
+                                    <p>Tipo:</p>
+                                </div>
+                                <div id="pokepoke">
+                                    <p>Movimientos:</p>
+                                </div>
+                                <div id="stats">
+                                    <p>Estadísticas:</p>
+                                    <div id="basePokemon"></div>
+                                    <div id="attackPokemon"></div>
+                                    <div id="defensePokemon"></div>
+                                    <div id="attackSpecialPokemon"></div>
+                                    <div id="defenseSpecialPokemon"></div>
+                                    <div id="speedPokemon"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./assets/img/pokeball.png" class= "pokemonos" alt="Pokemon" id="pokeImg" width="160px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pokedex-left-bottom">
+                        <div class='burbuja azul grande'>
+                            <div class="burbuja azul-mediana">
+                                <div class="burbuja azul-pequeña"></div>
+                            </div>
+                        </div>
+                        <input class="input-pokemon" type="text" placeholder="Pikachu" id="pokeName" name="pokeName"><br>
+                        <div id="pokemonFull"></div>
+                    </div>
+                    <br>
+                    <div class="botonera">
+                        <button class= "butonPokemon" onclick="fetchPokemon()">Buscar Pokemon</button>
+                        <button class= "butonPokemon" onclick="getPokemonId()">Pokemon</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+</html>
